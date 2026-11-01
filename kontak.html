@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jajan Keliling Jakarta - Kirim Rekomendasi</title>
+</head>
+<body>
+
+<header>
+  <h1>Jajan Keliling Jakarta</h1>
+  <p>Panduan jajanan Betawi khas ibu kota</p>
+</header>
+
+<nav aria-label="Navigasi utama">
+  <ul>
+    <li><a href="index.html">Beranda</a></li>
+    <li><a href="jajanan.html">Daftar Jajanan</a></li>
+    <li><a href="kontak.html">Kirim Rekomendasi</a></li>
+  </ul>
+</nav>
+
+<main>
+  <section>
+    <h2>Kirim Rekomendasi Jajananmu</h2>
+    <p>Punya jajanan favorit di Jakarta? Isi formulir di bawah ini. Kolom bertanda wajib harus diisi.</p>
+
+    <form action="kontak.html" method="get">
+
+      <p>
+        <label for="nama">Nama Lengkap (wajib)</label><br>
+        <input type="text" id="nama" name="nama" required>
+      </p>
+
+      <p>
+        <label for="email">Email (wajib)</label><br>
+        <input type="email" id="email" name="email" required>
+      </p>
+
+      <p>
+        <label for="tanggal">Tanggal Terakhir Kamu Mencicipi</label><br>
+        <input type="date" id="tanggal" name="tanggal">
+      </p>
+
+      <fieldset>
+        <legend>Wilayah Jajanan (wajib pilih satu)</legend>
+        <p>
+          <input type="radio" id="pusat" name="wilayah" value="pusat" required>
+          <label for="pusat">Jakarta Pusat</label>
+        </p>
+        <p>
+          <input type="radio" id="utara" name="wilayah" value="utara">
+          <label for="utara">Jakarta Utara</label>
+        </p>
+        <p>
+          <input type="radio" id="barat" name="wilayah" value="barat">
+          <label for="barat">Jakarta Barat</label>
+        </p>
+        <p>
+          <input type="radio" id="selatan" name="wilayah" value="selatan">
+          <label for="selatan">Jakarta Selatan</label>
+        </p>
+        <p>
+          <input type="radio" id="timur" name="wilayah" value="timur">
+          <label for="timur">Jakarta Timur</label>
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Jenis Jajanan</legend>
+        <p>
+          <input type="checkbox" id="makanan" name="jenis" value="makanan">
+          <label for="makanan">Makanan</label>
+        </p>
+        <p>
+          <input type="checkbox" id="minuman" name="jenis" value="minuman">
+          <label for="minuman">Minuman</label>
+        </p>
+        <p>
+          <input type="checkbox" id="kue" name="jenis" value="kue">
+          <label for="kue">Kue atau camilan</label>
+        </p>
+      </fieldset>
+
+      <p>
+        <label for="pesan">Ceritakan Jajananmu (wajib, minimal 10 karakter)</label><br>
+        <textarea id="pesan" name="pesan" rows="5" cols="40" minlength="10" required></textarea>
+      </p>
+
+      <p>
+        <button type="submit">Kirim</button>
+        <button type="reset">Reset</button>
+      </p>
+
+    </form>
+  </section>
+
+  <aside>
+    <h2>Catatan</h2>
+    <p>Formulir ini hanya untuk latihan, jadi data belum disimpan ke server.</p>
+  </aside>
+</main>
+
+<footer>
+  <p>&copy; 2026 Jajan Keliling Jakarta</p>
+  <p>Dibuat oleh: Nayla Amalia Nikmatullah (202532046)</p>
+</footer>
+
+</body>
+</html>
